@@ -3,9 +3,10 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "node server.js",
-    "lint": "eslint ."
+ "scripts": {
+  "dev": "node server.js",
+  "lint": "eslint .",
+  "build": "echo 'No build step required for Express backend.'"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.53.0",

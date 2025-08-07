@@ -15,7 +15,7 @@ export default function Tables({ table, allowed, loggedID }) {
                 setLoading(true);
                 setError(false);
                 console.log("Table: " + table);
-                const response = await fetch(`http://localhost:3000/router/fetch`, {
+                const response = await fetch(`https://water-crm-app.onrender.com/router/fetch`, {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ table }),
@@ -43,7 +43,7 @@ export default function Tables({ table, allowed, loggedID }) {
         }
 
         try {
-            const response = await fetch("http://localhost:3000/auth/delete", {
+            const response = await fetch("https://water-crm-app.onrender.com/auth/delete", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ id: userID })

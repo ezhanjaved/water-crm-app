@@ -22,7 +22,7 @@ export default function Login({ setSession }) {
 
     try {
       setLoading(true);
-      const response = await fetch('http://localhost:3000/auth/' + (signUp ? 'sign-up' : 'sign-in'), {
+      const response = await fetch('https://water-crm-app.onrender.com/auth/' + (signUp ? 'sign-up' : 'sign-in'), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(info)

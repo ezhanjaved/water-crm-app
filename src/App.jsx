@@ -16,7 +16,7 @@ function App() {
     console.log("Confirmation Checking...");
     console.log("Email: " + email);
     try {
-      const response = await fetch("http://localhost:3000/router/confirmation", {
+      const response = await fetch("https://water-crm-app.onrender.com/router/confirmation", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email })

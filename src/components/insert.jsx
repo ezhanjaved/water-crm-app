@@ -39,7 +39,7 @@ export default function Insert({ setInsert, allowed }) {
         try {
             setLoading(true);
             const response = await fetch(
-                'http://localhost:3000/router/insert',
+                'https://water-crm-app.onrender.com/router/insert',
                 {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
@@ -79,7 +79,7 @@ export default function Insert({ setInsert, allowed }) {
         try {
             setLoading(true);
             const response = await fetch(
-                'http://localhost:3000/router/update',
+                'https://water-crm-app.onrender.com/router/update',
                 {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
@@ -119,7 +119,7 @@ export default function Insert({ setInsert, allowed }) {
         try {
             setLoading(true);
             const response = await fetch(
-                'http://localhost:3000/router/delete',
+                'https://water-crm-app.onrender.com/router/delete',
                 {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },

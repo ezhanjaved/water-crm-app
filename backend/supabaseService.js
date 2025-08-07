@@ -1,5 +1,9 @@
 import { createClient } from '@supabase/supabase-js'
+import "dotenv/config";
 
-const supabaseRemover = createClient('https://yepkgmxbijeguqtiiguy.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InllcGtnbXhiaWplZ3VxdGlpZ3V5Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1MzczNDIwOCwiZXhwIjoyMDY5MzEwMjA4fQ.T54aGP2HYnRtbhwg9QLdPDtigcyY45jxlgYlKwf2FCo');
+const serviceKey = process.env.SUPABASE_SERVICE
+const url = process.env.SUPABASE_URL
+
+const supabaseRemover = createClient(url, serviceKey);
 
 export default supabaseRemover

@@ -79,7 +79,7 @@ export default function Login({ setSession }) {
             <button onClick={() => setError(false)}>Okay</button>
           </>
         )}
-        <span>If you want complete control make sure to type "Admin" in the role!</span>
+        <span>If you want complete control make sure to type "Admin" in the role while signing up!</span>
       </div>
     </section>
   );

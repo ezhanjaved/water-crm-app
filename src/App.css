@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Jost";
+}
+
+#main-canvas {
+  display: flex;
+  flex-direction: row;
+  background: #ede6ed;
+  height: 100%;
+}
+
+#login-canvas {
+  display: flex;
+  flex-direction: column;
+  background: #ede6ed;
+  height: 100vh;
+  justify-content: center;
+}
+
+.sidebar, .main-bar {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar {
+  height: 100vh;
+}
+
+.main-bar {
+  overflow-y: auto;
+}
+
+.sidebar {
+  background: #191825;
+  flex: 0.5;
+  color: #ede6ed;
+  align-items: center;
+  text-decoration: none;
+}
+
+.sidebar h2 {
+  font-size: 150px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #ede6ed;
+  font-size: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.sidebar button {
+  background: #ede6ed;
+  border-radius: 20px;
+  border: none;
+  height: 5%;
+  width: 50%;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.main-bar {
+  flex: 2;
+  color: #191825;
+}
+
+.main-bar h2 {
+  font-size: 50px;
+  margin-left: 20px;
+}
+
+.main-bar table {
+  margin: 20px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #191825;
+  justify-content: center;
+  align-self: center;
+  background: #191825;
+  color: #ede6ed;
+  height: 500px;
+  width: 550px;
+  border-radius: 20px;
+  padding: 20px;
+  gap: 20px;
+}
+
+.sign-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-form input {
+  height: 25px;
+  border-radius: 20px;
+  border: none;
+  padding: 2px;
+}
+
+.sign-form button {
+  margin-top: 20px;
+  border-radius: 20px;
+  border: none;
+  height: 25px;
+}
+
+.alert-div {
+  display: flex;
+  flex-direction: column;
+  background: #191825;
+  height: 150px;
+  width: 350px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 40%;
+  color: #ede6ed;
+  text-align: center;
+  border-radius: 20px;
+  right: 30%;
+}
+
+.alert-div button {
+  border-radius: 20px;
+  border: none;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.select-in {
+  display: flex;
+  background: #191825;
+  color: #ede6ed;
+  border-radius: 20px;
+  margin-top: 20px;
+  width: 400px;
+  margin-left: 20px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.form-in {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  width: 400px;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.form-in input {
+  border-radius: 20px;
+  border: none;
+  height: 30px;
+  border: 2px solid #191825;
+  padding-left: 5px;
+}
+
+.form-in button{
+  background: #191825;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 20px;
+  color: #ede6ed;
+}
+
+.span-al {
+  font-size: 20px;
+  color: #191825;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-weight: bolder;
+}
